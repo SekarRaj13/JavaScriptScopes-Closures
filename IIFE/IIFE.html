@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IIFE</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	(function (name) {
+		// body...
+		var a = 10;
+		var b = 20;
+
+		console.log(name);
+
+		console.log(a + b);
+	})("sekar");       // Imeditaly invoked function expression
+
+	(function () {     // anoyonmas function
+		// body...
+		var a = 30;
+		var b = 20;
+
+		console.log(a + b);
+	})(); 
+
+	console.log(a);
+
+</script>
+
+</body>
+</html>

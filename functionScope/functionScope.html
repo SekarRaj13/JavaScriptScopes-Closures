@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scopes & closures</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var name = "sekarRaj"; 
+	function foo (){
+
+		console.log(name);  // javascript is a function scope();
+		var age = 26;       // so we cant console out side;
+
+	}
+	foo();
+
+	console.log(age);
+</script>
+
+</body>
+</html>

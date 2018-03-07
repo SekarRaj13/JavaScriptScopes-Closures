@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blockScope</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var name = "sekar";
+	if ( name === "sekar") {
+
+		var secondName = "raj";  // javascript is not block scope. so we can console the value in outside scope;
+	}
+	console.log(name);
+	console.log(secondName);
+</script>
+
+</body>
+</html>

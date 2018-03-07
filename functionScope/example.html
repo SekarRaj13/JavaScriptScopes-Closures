@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>example</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var outer = 10;
+	var inner = 30;       // global variable
+
+	function foo() {
+		// body...
+		var inner = 20;           // this is called function scope
+		//console.log(inner);
+	}
+	foo();
+
+	console.log(inner);
+</script>
+</body>
+</html>
