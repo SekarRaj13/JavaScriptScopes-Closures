@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var a = 10;
+	var b = 20;
+
+	function myfun() {
+		// body...
+		// var a = 20;
+		b = a;
+		c = 30;
+		console.log("inside" + b); 
+	}
+
+	myfun();
+	console.log(b);  
+	console.log(c);  // without var keyword we can access the value for that variable
+
+
+</script>
+
+</body>
+</html>
