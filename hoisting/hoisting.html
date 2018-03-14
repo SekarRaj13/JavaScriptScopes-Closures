@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hoisting</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	function fun1(){
+		console.log("first - sekar");
+		fun2();
+	} 
+	fun1();
+	function fun2(){
+		console.log("second - raj");
+		fun1();
+	}
+</script>
+</body>
+</html>
