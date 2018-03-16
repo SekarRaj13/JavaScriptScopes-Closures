@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>copy Var</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var a = 10;
+
+	function outer(){
+		var b= 20;
+		var inner = function(){
+		a++;
+		b++;
+		console.log(a);
+		console.log(b);
+		}
+		return inner;
+	}
+
+	outer()();
+	outer()();
+
+	function countWrapper() {
+    var counter = 0;
+    return function() {
+    ++counter;
+    console.log(counter);
+    // do something with counter
+    }
+    // updateClickCount();    
+    // return inner; 
+}
+countWrapper()();
+
+
+</script>
+
+</body>
+</html>
