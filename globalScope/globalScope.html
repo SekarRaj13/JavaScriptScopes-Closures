@@ -7,20 +7,18 @@
 
 <script type="text/javascript">
 	
-	var a = 10;
+	var a = 10;                     // global variable
 	var b = 20;
 
-	function myfun() {
-		// body...
-		// var a = 20;
+	function myfun() {              // function declration 
 		b = a;
-		c = 30;
-		console.log("inside" + b); 
+		c = 30;                     // with var keyword function scope consider as a global variable
+		console.log("inside" + b);  // inside 10;  we access the global inside the function scope 
 	}
 
-	myfun();
-	console.log(b);  
-	console.log(c);  // without var keyword we can access the value for that variable
+	myfun();                        // function calling
+	console.log(b);  				// 10
+	console.log(c);                 // 30 -   without var keyword we can access from function scope value
 
 
 </script>

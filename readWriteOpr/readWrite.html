@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<title>Read Write</title>
@@ -6,18 +6,18 @@
 <body>
 <script type="text/javascript">
 	
-	var  name = "sekarRaj"; // write operation;
+	var  name = "sekarRaj";     // write operation;
 
-	firstName = name;     // name is write operation;
-						  // firstName is read operation from name;
+	firstName = name;           // name is write operation to the firstName avriable
+						        // firstName is read operation from name variable;
 
-	console.log(firstName);	
+	console.log(firstName);	    // this is also read operation from firstName variable
 
 	function () {
 		// body...
-		age = 26;
+		age = 26;               // local variable inside the function scope
 	}
-	console.log(age);
+	console.log(age);            // undefined  because of local scope.
 
 </script>
 
