@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module Pattern</title>
+</head>
+<body>
+<script type="text/javascript">
+	function obj(){
+
+		var firstName = "sekar";
+		var lastName = "raj";
+
+		var obj = {
+		"getFirstName": function() {
+			return firstName;
+		},
+		"getLastName": function() {
+			return lastName;
+		},
+		"setFirstName": function(name) {
+			firstName = name;
+		},
+		"setLastName": function(name){
+			lastName = name;
+		},
+		"fullName": function(){
+			return firstName + " " + lastName;
+		}
+
+	};
+
+	return obj;
+			
+	}
+
+
+var fun = obj();
+// console.log(fun.getFirstName());
+fun.setFirstName("raja");
+console.log(fun.getFirstName());
+fun.setLastName("ram");
+console.log(fun.getLastName());
+console.log(fun.fullName());
+</script>
+
+</body>
+</html>
