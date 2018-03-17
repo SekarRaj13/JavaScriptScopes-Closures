@@ -10,7 +10,7 @@
 	var a = 10;
 
 	function outer(){
-		var b= 20;
+		var b= 20;                // inside the scope variable create a new copy of every time 
 		var inner = function(){
 		a++;
 		b++;
@@ -20,14 +20,15 @@
 		return inner;
 	}
 
-	outer()();
-	outer()();
+	outer()();   // this is called fun and inside the function also
+				 // 11 // 21
+	outer()();   // 12 // 21
 
 	function countWrapper() {
     var counter = 0;
     return function() {
     ++counter;
-    console.log(counter);
+    console.log(counter);         // 1
     // do something with counter
     }
     // updateClickCount();    

@@ -6,14 +6,14 @@
 <body>
 
 <script type="text/javascript">
-	var firstName = "sekar";
+	var firstName = "sekar";   
 
 	function func1() {
     
     var lastName = "raj";	
 
-    	var fun2 = function() {
-    		console.log(firstName + " " + lastName);
+    	var fun2 = function() {          // this variable reference in scope - this  called closures 
+    		console.log(firstName + " " + lastName);  // sekar raj // it will hold the each new copy of                                                        variable
     	}
     	return fun2;
 	}

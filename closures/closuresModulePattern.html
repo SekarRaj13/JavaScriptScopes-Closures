@@ -7,12 +7,13 @@
 <script type="text/javascript">
 	function obj(){
 
-		var firstName = "sekar";
+		var firstName = "sekar";   // this variable are not based on below obj
+								   // function scope
 		var lastName = "raj";
 
 		var obj = {
 		"getFirstName": function() {
-			return firstName;
+			return firstName;        // this value reference from function scope
 		},
 		"getLastName": function() {
 			return lastName;
@@ -34,13 +35,13 @@
 	}
 
 
-var fun = obj();
-// console.log(fun.getFirstName());
-fun.setFirstName("raja");
-console.log(fun.getFirstName());
-fun.setLastName("ram");
-console.log(fun.getLastName());
-console.log(fun.fullName());
+var fun = obj();      
+console.log(fun.getFirstName());  // sekar
+fun.setFirstName("raja");		  // passing to arugment "raja"
+console.log(fun.getFirstName());  // raja	
+fun.setLastName("ram");           // passing to arugment "ram"
+console.log(fun.getLastName());   // ram
+console.log(fun.fullName());      // raja ram
 </script>
 
 </body>
