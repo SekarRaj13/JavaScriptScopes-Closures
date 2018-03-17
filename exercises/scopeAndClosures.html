@@ -7,14 +7,14 @@
 
 <script type="text/javascript">
 	var a = 200;
-	function f1() {
+	function f1() {  // here we are using scope chain
 		// body...
 		var b = a;
-		console.log(b);
+		console.log(b);      // 200
 		function f2(){
 			// var b = 200;
 			var c = b;
-			console.log(c);	
+			console.log(c);	 // 200
 		}
 		f2();
 	}

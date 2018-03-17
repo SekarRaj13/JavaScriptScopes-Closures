@@ -7,16 +7,16 @@
 
 <script type="text/javascript">
 	
-	var name = "sekarRaj"; 
-	function foo (){
+	var name = "sekarRaj";  // global scope
+	function foo (){        // function decaldration
 
 		console.log(name);  // javascript is a function scope();
 		var age = 26;       // so we cant console out side;
 
 	}
-	foo();
+	foo();                  // function calling
 
-	console.log(age);
+	console.log(age);      // not defined becaluse of this is local scope
 </script>
 
 </body>

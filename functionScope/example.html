@@ -7,16 +7,16 @@
 
 <script type="text/javascript">
 	var outer = 10;
-	var inner = 30;       // global variable
+	var inner = 30;               // global variable
 
 	function foo() {
 		// body...
-		var inner = 20;           // this is called function scope
-		//console.log(inner);
+		var inner = 20;           // this is called function scope or local scope
+		console.log(inner);       // 20
 	}
-	foo();
+	foo();  // fuction calling
 
-	console.log(inner);
+	console.log(inner);            // 30
 </script>
 </body>
 </html>
